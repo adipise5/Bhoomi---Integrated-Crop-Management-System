@@ -266,6 +266,33 @@ function App() {
         </div>
       </div>
 
+      <div id="sdg" className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Target</h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="bg-[#CD8B2A] rounded-lg p-8 text-white">
+              <div className="text-6xl font-bold mb-4">12</div>
+              <h3 className="text-2xl font-bold mb-4">RESPONSIBLE CONSUMPTION AND PRODUCTION</h3>
+              <p className="text-lg">Supporting sustainable agriculture and efficient resource management</p>
+            </div>
+            <div className="space-y-6">
+              <div className="bg-[#CD8B2A] rounded-lg p-6 text-white">
+                <h4 className="text-xl font-bold mb-2">Target 12.2: Efficient Resource Use</h4>
+                <p>By 2030, achieve sustainable management and efficient use of natural resources.</p>
+              </div>
+              <div className="bg-[#CD8B2A] rounded-lg p-6 text-white">
+                <h4 className="text-xl font-bold mb-2">Target 12.5: Reduce Waste Generation</h4>
+                <p>By 2030, substantially reduce waste generation through prevention, reduction, recycling, and reuse.</p>
+              </div>
+              <div className="bg-[#CD8B2A] rounded-lg p-6 text-white">
+                <h4 className="text-xl font-bold mb-2">Target 12.8: Encourage Sustainable Practices</h4>
+                <p>By 2030, ensure people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Contact Us Section */}
       <div className="bg-white py-32">
         <div className="max-w-7xl mx-auto px-4">
