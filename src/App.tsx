@@ -185,11 +185,14 @@ function App() {
             Transform your farming practices with intelligent insights, real-time monitoring,
             and data-driven recommendations.
           </p>
-          <button className="bg-green-500 text-white px-10 py-5 rounded-full text-xl font-semibold 
+          <a href="https://fdlrpndod2uaggsknznag3.streamlit.app/" target="_blank" rel="noopener noreferrer">
+            <button className="bg-green-500 text-white px-10 py-5 rounded-full text-xl font-semibold 
             hover:bg-green-600 transition-all transform hover:scale-105 flex items-center mx-auto">
-            Get Started
-            <ArrowRight className="ml-3 h-6 w-6" />
+              Get Started
+              <ArrowRight className="ml-3 h-6 w-6" />
           </button>
+          </a>
+
         </div>
       </div>
 
