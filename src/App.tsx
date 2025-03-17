@@ -293,66 +293,17 @@ function App() {
         </div>
       </div>
 
-      {/* Contact Us Section */}
-      <div className="bg-white py-32">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Contact Us</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Get in touch with our team for any queries or support
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <div className="space-y-12">
-              <div className="flex items-center p-6 bg-gradient-custom rounded-2xl hover-scale">
-                <Mail className="h-8 w-8 text-green-600 mr-6" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Email</h3>
-                  <p className="text-gray-600">contact@bhoomi.com</p>
-                </div>
-              </div>
-              <div className="flex items-center p-6 bg-gradient-custom rounded-2xl hover-scale">
-                <Phone className="h-8 w-8 text-green-600 mr-6" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Phone</h3>
-                  <p className="text-gray-600">+91 (800) 123-4567</p>
-                </div>
-              </div>
-              <div className="flex items-center p-6 bg-gradient-custom rounded-2xl hover-scale">
-                <MapPin className="h-8 w-8 text-green-600 mr-6" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Address</h3>
-                  <p className="text-gray-600">123 Agriculture Road, Tech Valley, India</p>
-                </div>
-              </div>
-            </div>
-            <form className="space-y-8 bg-white p-8 rounded-2xl shadow-lg">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-6 py-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-6 py-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                />
-              </div>
-              <div>
-                <textarea
-                  placeholder="Your Message"
-                  rows={6}
-                  className="w-full px-6 py-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                ></textarea>
-              </div>
-              <button className="w-full bg-green-500 text-white px-8 py-4 rounded-xl font-semibold 
-                hover:bg-green-600 transition-all transform hover:scale-105">
-                Send Message
-              </button>
-            </form>
+      
+      {/* Contact Section */}
+      <div id="contact" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Contact Us</h2>
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-gray-600 mb-8">
+            Have questions about Bhoomi? We're here to help you get started with smart farming.
+          </p>
+          <div className="space-y-4">
+            <p className="text-gray-600">Email: support@bhoomi.com</p>
+            <p className="text-gray-600">Phone: +1 (555) 123-4567</p>
           </div>
         </div>
       </div>
