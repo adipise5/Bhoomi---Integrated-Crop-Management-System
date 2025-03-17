@@ -82,11 +82,7 @@ function Header() {
   );
 }
 
-function FeatureCard({ icon: Icon, title, description }: {
-  icon: React.ElementType;
-  title: string;
-  description: string;
-}) {
+function FeatureCard({ icon: Icon, title, description }) {
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg hover-scale">
       <div className="h-16 w-16 bg-gradient-custom rounded-2xl flex items-center justify-center mb-6">
@@ -98,7 +94,7 @@ function FeatureCard({ icon: Icon, title, description }: {
   );
 }
 
-function TargetCard({ title, description }: { title: string; description: string }) {
+function TargetCard({ title, description }) {
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg hover-scale">
       <h3 className="text-2xl font-semibold mb-4 text-gray-800">{title}</h3>
@@ -160,8 +156,9 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
+      {/* Hero Section - Home */}
       <div 
+        id="home"
         className="relative min-h-screen flex items-center justify-center"
         style={{
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80')",
@@ -190,14 +187,13 @@ function App() {
             hover:bg-green-600 transition-all transform hover:scale-105 flex items-center mx-auto">
               Get Started
               <ArrowRight className="ml-3 h-6 w-6" />
-          </button>
+            </button>
           </a>
-
         </div>
       </div>
 
-      {/* Our Motive Section */}
-      <div className="bg-white py-32">
+      {/* Our Motive Section - About */}
+      <div id="about" className="bg-white py-32">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Motive</h2>
@@ -225,8 +221,8 @@ function App() {
         </div>
       </div>
 
-      {/* Features Section */}
-      <div className="max-w-7xl mx-auto px-4 py-32">
+      {/* Features Section - Features */}
+      <div id="features" className="max-w-7xl mx-auto px-4 py-32">
         <div className="text-center mb-20">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Comprehensive Crop Management Solutions
@@ -293,8 +289,7 @@ function App() {
         </div>
       </div>
 
-      
-      {/* Contact Section */}
+      {/* Contact Section - Contact */}
       <div id="contact" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Contact Us</h2>
         <div className="max-w-2xl mx-auto text-center">
@@ -324,19 +319,19 @@ function App() {
             <div>
               <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
               <ul className="space-y-4">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-6">Services</h3>
               <ul className="space-y-4">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Crop Recommendation</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Disease Detection</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Weather Forecast</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Yield Prediction</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Crop Recommendation</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Disease Detection</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Weather Forecast</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Yield Prediction</a></li>
               </ul>
             </div>
             <div>
@@ -358,7 +353,7 @@ function App() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Bhoomi. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Bhoomi. All rights reserved.</p>
           </div>
         </div>
       </footer>
