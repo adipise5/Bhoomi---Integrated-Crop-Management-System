@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Plane as Plant, Bug, LineChart, Cloud, FlaskRound as Flask, Tractor, ArrowRight, Leaf, Target, Users, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Menu, X } from 'lucide-react';
-import { FeedbackSection } from './components/FeedbackSection';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
