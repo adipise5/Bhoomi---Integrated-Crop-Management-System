@@ -301,7 +301,7 @@ function App() {
           </p>
           <div className="space-y-4">
             <p className="text-gray-600">Email: support@bhoomi.com</p>
-            <p className="text-gray-600">Phone: +1 (555) 123-4567</p>
+            <p className="text-gray-600">Phone: +91 12345 67890</p>
           </div>
         </div>
       </div>
