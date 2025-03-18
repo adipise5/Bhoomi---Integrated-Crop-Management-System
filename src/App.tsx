@@ -267,21 +267,20 @@ function App() {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Target</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="bg-[#CD8B2A] rounded-lg p-8 text-white">
-              <div className="text-6xl font-bold mb-4">12</div>
               <h3 className="text-2xl font-bold mb-4">RESPONSIBLE CONSUMPTION AND PRODUCTION</h3>
               <p className="text-lg">Supporting sustainable agriculture and efficient resource management</p>
             </div>
             <div className="space-y-6">
               <div className="bg-[#CD8B2A] rounded-lg p-6 text-white">
-                <h4 className="text-xl font-bold mb-2">Target 12.2: Efficient Resource Use</h4>
+                <h4 className="text-xl font-bold mb-2">Efficient Resource Use</h4>
                 <p>By 2030, achieve sustainable management and efficient use of natural resources.</p>
               </div>
               <div className="bg-[#CD8B2A] rounded-lg p-6 text-white">
-                <h4 className="text-xl font-bold mb-2">Target 12.5: Reduce Waste Generation</h4>
+                <h4 className="text-xl font-bold mb-2">Reduce Waste Generation</h4>
                 <p>By 2030, substantially reduce waste generation through prevention, reduction, recycling, and reuse.</p>
               </div>
               <div className="bg-[#CD8B2A] rounded-lg p-6 text-white">
-                <h4 className="text-xl font-bold mb-2">Target 12.8: Encourage Sustainable Practices</h4>
+                <h4 className="text-xl font-bold mb-2">Encourage Sustainable Practices</h4>
                 <p>By 2030, ensure people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature.</p>
               </div>
             </div>
@@ -298,7 +297,7 @@ function App() {
           </p>
           <div className="space-y-4">
             <p className="text-gray-600">Email: support@bhoomi.com</p>
-            <p className="text-gray-600">Phone: +1 (555) 123-4567</p>
+            <p className="text-gray-600">Phone: +91 987654xxxx</p>
           </div>
         </div>
       </div>
@@ -321,17 +320,13 @@ function App() {
               <ul className="space-y-4">
                 <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
                 <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-6">Services</h3>
               <ul className="space-y-4">
-                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Crop Recommendation</a></li>
-                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Disease Detection</a></li>
-                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Weather Forecast</a></li>
-                <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Yield Prediction</a></li>
+                 <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
