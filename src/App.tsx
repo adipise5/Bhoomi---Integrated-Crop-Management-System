@@ -27,23 +27,136 @@ function Header() {
           </div>
 
           {/* Desktop Navigation */}
+          function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header className={`fixed w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white shadow-lg' : 'glass-effect'
+    }`}>
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center justify-between h-20">
+          <div className="flex items-center">
+            <Leaf className={`h-8 w-8 ${isScrolled ? 'text-green-600' : 'text-green-400'}`} />
+            <span className={`text-2xl font-bold ml-2 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
+              Bhoomi
+            </span>
+          </div>
+
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {['Home', 'Features', 'About', 'Contact'].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className={`font-medium hover:text-green-500 transition-colors ${
-                  isScrolled ? 'text-gray-600' : 'text-white'
-                }`}
-              >
-                {item}
-              </a>
-            ))}
-            <button className="bg-green-500 text-white px-6 py-2 rounded-full font-medium 
-              hover:bg-green-600 transition-all transform hover:scale-105">
+            <a
+              href="#home"
+              className={`font-medium hover:text-green-500 transition-colors ${
+                isScrolled ? 'text-gray-600' : 'text-white'
+              }`}
+            >
+              Home
+            </a>
+            <a
+              href="#features"
+              className={`font-medium hover:text-green-500 transition-colors ${
+                isScrolled ? 'text-gray-600' : 'text-white'
+              }`}
+            >
+              Features
+            </a>
+            <a
+              href="#about"
+              className={`font-medium hover:text-green-500 transition-colors ${
+                isScrolled ? 'text-gray-600' : 'text-white'
+              }`}
+            >
+              About
+            </a>
+            <a
+              href="#contact"
+              className={`font-medium hover:text-green-500 transition-colors ${
+                isScrolled ? 'text-gray-600' : 'text-white'
+              }`}
+            >
+              Contact
+            </a>
+            <a
+              href="https://fdlrpndod2uaggsknznag3.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-6 py-2 rounded-full font-medium 
+                hover:bg-green-600 transition-all transform hover:scale-105"
+            >
               Get Started
-            </button>
+            </a>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className={isScrolled ? 'text-gray-800' : 'text-white'} />
+            ) : (
+              <Menu className={isScrolled ? 'text-gray-800' : 'text-white'} />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white shadow-lg rounded-lg mt-2 p-4 absolute left-4 right-4">
+            <a
+              href="#home"
+              className="block py-2 text-gray-600 hover:text-green-500 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href="#features"
+              className="block py-2 text-gray-600 hover:text-green-500 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Features
+            </a>
+            <a
+              href="#about"
+              className="block py-2 text-gray-600 hover:text-green-500 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </a>
+            <a
+              href="#contact"
+              className="block py-2 text-gray-600 hover:text-green-500 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </a>
+            <a
+              href="https://fdlrpndod2uaggsknznag3.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-green-500 text-white px-6 py-2 rounded-full font-medium 
+                hover:bg-green-600 transition-all transform hover:scale-105 mt-4 text-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Get Started
+            </a>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}
 
           {/* Mobile Menu Button */}
           <button
