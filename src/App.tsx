@@ -39,10 +39,12 @@ function Header() {
                 {item}
               </a>
             ))}
+            <a href="https://fdlrpndod2uaggsknznag3.streamlit.app/" target="_blank" rel="noopener noreferrer">
             <button className="bg-green-500 text-white px-6 py-2 rounded-full font-medium 
               hover:bg-green-600 transition-all transform hover:scale-105">
               Get Started
             </button>
+           </a>
           </nav>
 
           {/* Mobile Menu Button */}
