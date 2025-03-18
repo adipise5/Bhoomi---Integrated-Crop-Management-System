@@ -289,6 +289,9 @@ function App() {
         </div>
       </div>
 
+      {/* Feedback Section */}
+      <FeedbackSection />
+
       {/* Contact Section - Contact */}
       <div id="contact" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Contact Us</h2>
