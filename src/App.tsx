@@ -39,7 +39,7 @@ function Header() {
                 {item}
               </a>
             ))}
-            <a href="https://bhoomi.streamlit.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://icmappwebapp.streamlit.app/" target="_blank" rel="noopener noreferrer">
             <button className="bg-green-500 text-white px-6 py-2 rounded-full font-medium 
               hover:bg-green-600 transition-all transform hover:scale-105">
               Get Started
@@ -184,7 +184,7 @@ function App() {
             Transform your farming practices with intelligent insights, real-time monitoring,
             and data-driven recommendations.
           </p>
-          <a href="https://bhoomi.streamlit.app/" target="_blank" rel="noopener noreferrer">
+          <a href="https://icmappwebapp.streamlit.app/" target="_blank" rel="noopener noreferrer">
             <button className="bg-green-500 text-white px-10 py-5 rounded-full text-xl font-semibold 
             hover:bg-green-600 transition-all transform hover:scale-105 flex items-center mx-auto">
               Get Started
@@ -327,7 +327,7 @@ function App() {
             <div>
               <h3 className="text-xl font-semibold mb-6">Services</h3>
               <ul className="space-y-4">
-                 <li><a href="https://bhoomi.streamlit.app/" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                 <li><a href="https://icmappwebapp.streamlit.app/" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
                 <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
